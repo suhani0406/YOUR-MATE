@@ -6,7 +6,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .background{
-    background: rgba(0,0,0,0.6) url('../img/l1.jpg');
+    background: rgba(0,0,0,0.6) url('l1.jpg');
     background-size: cover;
     background-blend-mode: darken;
     background-repeat: no-repeat;
