@@ -1,0 +1,126 @@
+*{
+    margin:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+}
+.form-box{
+    top:145px;
+    width:380px;
+    height:250px;
+    position: relative;
+    border:2px solid orangered;
+    background-color: white;
+    border-bottom: 7px solid orangered;
+    margin:1% auto;
+    padding: 3px;
+}
+.input-field{
+    width:100%;
+    padding:10px 0;
+    margin:5px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right:0;
+    border-bottom: 1px solid grey;
+}
+.input-group{
+    width:280px;
+    left:48px;
+    top:70px;
+    position:absolute;
+}
+.hero img{
+    height:120px;
+    width: 150px;
+    margin-left: 588px;
+    margin-top: 5px;
+}
+.f1 img{
+    top:0px;
+    right:50px;
+    position:absolute;
+    width:85px;
+    height:60px;
+}
+.form-box h1{
+    margin-left: 20px;
+    margin-top: 5px;
+    font-weight:300;
+    font-size: 30px;
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+}
+.submit-btn{
+    width:85%;
+    padding: 10px;
+    cursor:pointer;
+    margin-left: 18px;
+    border:0;
+    background-color:rgb(250, 129, 59);
+    border-radius:5px;
+
+}
+.submit-btn:hover{
+    background: #f78e04ee;
+     color:#ccc;
+     border-radius: 5px;
+     box-shadow: 0 0 5px #f39056,
+                 0 0 25px #f0a161,
+                 0 0 50px #be8748,
+                 0 0 100px #e4a35a;
+}
+
+
+.background{
+    background: rgba(0,0,0,0.6) url('../img/unimall1.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+}
+
+.text-footer{
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    background-color: orangered;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    bottom:0;
+    position:absolute;
+    width:100%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    top: 0;
+    cursor: pointer;
+}
+.navbar .fa{
+ margin-right: 8px;
+}
+
+.leftnav-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top:10;
+
+}
+
+.leftnav-list li{
+    list-style: none;
+    padding: 16px 80px;
+}
+.leftnav-list li a{
+    text-decoration: none;
+    color: orangered;
+    font-size: 21px ;
+}
+.leftnav-list li a:hover{
+    color:white;
+}
