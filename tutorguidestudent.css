@@ -45,9 +45,9 @@
 .form-box h1{
     margin-left: 20px;
     margin-top: 5px;
-    font-weight:300;
     font-size: 30px;
     font-family: "Trebuchet MS", Tahoma, sans-serif;
+    font-weight:400;
 }
 .submit-btn{
     width:85%;
@@ -71,8 +71,8 @@
 
 
 .background{
-    background: rgba(0,0,0,0.6) url('../img/unimall1.jpg');
-    background-size: cover;
+    background: rgba(0,0,0,0.4) url('D:\major project\unimall1.jpgs');
+    background-size: cover; 
     background-blend-mode: darken;
     background-repeat: no-repeat;
 }
@@ -92,35 +92,5 @@
     position:absolute;
     width:100%;
 }
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;;
-    top: 0;
-    cursor: pointer;
-}
-.navbar .fa{
- margin-right: 8px;
-}
 
-.leftnav-list{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    top:10;
-
-}
-
-.leftnav-list li{
-    list-style: none;
-    padding: 16px 80px;
-}
-.leftnav-list li a{
-    text-decoration: none;
-    color: orangered;
-    font-size: 21px ;
-}
-.leftnav-list li a:hover{
-    color:white;
-}
+  

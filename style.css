@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 30%;
+    border-radius: 0px;
+   
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.navbar .fa{
+ margin-right: 8px;
+}
+
+.leftnav-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.leftnav-list li{
+    list-style: none;
+    padding: 16px 50px;
+}
+.leftnav-list li a{
+    text-decoration: none;
+    color: orangered;
+    font-size: 21px ;
+}
+
+.leftnav-list li a:hover{
+    color: white;
+}
+
+
+.rightNav{
+    width: 20%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+
+
+.background{
+    background: rgba(0,0,0,0.6) url('../img/hdlpu2.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+}
+
+
+.firstSection{
+    height: 110vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 90%;
+}
+
+.firstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf{
+    width: 30%;
+}
+
+.secondHalf img{
+    width: 120%;
+    padding: 0px 0;
+    border: ;
+    border-radius: ;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 35px;
+    color: orangered;
+
+}
+
+.text-small{
+    font-size: 13px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 3px solid  orangered;
+    border-radius: 20px;
+    background: none;
+    color: orangered;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.btn:hover{
+    color: white;
+}
+
+.btn-sm{
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+
+.section{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.section-left{
+flex-direction: row-reverse;}
+
+.paras{
+    padding: 0 55px;
+}
+
+.secTag{
+    padding: 12px 0;
+}
+
+.secSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img{
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+
+}
+
+
+
+.text-footer{
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    background-color: orangered;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    
+}
+
+.sub-menu{
+    display: none;
+}
+
+.leftnav-list li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: none;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.leftnav-list li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.leftnav-list li:hover .sub-menu ul li{
+
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted orangered;
+    border-radius: 0;
+    text-align: left;
+
+}
+
+
+.leftnav-list li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+}
+
