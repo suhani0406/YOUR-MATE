@@ -179,7 +179,7 @@ a:hover{
 
 
 .background{
-    background: rgba(0,0,0,0.4) url('../img/unimall.jpg');
+    background: rgba(0,0,0,0.4) url('unimall.jpg');
     background-size: cover;
     background-blend-mode: darken;
     background-repeat: no-repeat;
