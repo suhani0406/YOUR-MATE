@@ -129,7 +129,7 @@ margin-bottom: 40px;
 
 
 .background{
-    background:  url('../img/hdlpu2.jpg');
+    background:  url('hdlpu2.jpg');
     background-size: cover;
     background-blend-mode: darken;
     background-repeat: no-repeat;
