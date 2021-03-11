@@ -1,0 +1,190 @@
+<html>
+    <head> <title> Registration form </title>
+    <link rel="stylesheet" href="css/mp2.css"> 
+    <link rel="icon" href="img/l11.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<nav class="navbar">
+  <ul class="leftnav-list">
+      
+      <li><a href="index.html"><i class="fa fa-arrow-left"></i>Home</a></li>
+  </ul>
+</nav> 
+    <body class="background">
+        
+           <div class = "hero">
+          
+    
+               <div class = "form-box">
+                  <h1>  <i> Create Account </i> </h1>
+                   <img src = "D:\major project\Website Design\img\l11.png"> 
+                  
+                 <div class = "button-box">
+                    <div id = "btn"> </div>
+                    <button type = "button" class = "toggle-btn" onclick="login()"> Tutor </button>
+                    <button type = "button" class = "toggle-btn" onclick = "register()"> Guide </button>
+                    <button type = "button" class = "toggle-btn" onclick = "student()"> &nbsp;&nbsp;&nbsp;Student </button>        
+                </div> 
+
+
+                <!------for tutor-------->
+
+
+
+                <form id = "login" class = "input-group" name="myForm"  method="post">
+                    <input type = "text" class = "input-field" placeholder = "First Name" name ="name" required>
+                 <input type = "text" class = "input-field" placeholder = "Last Name" name = "lname" required>
+                 <input type = "text" class = "input-field" placeholder = "LPU Registration No." name = "reg" required><br>
+                 <div class = "gender"> Gender:&nbsp;
+                 <input type = "radio" value = "Male" name = "m"> Male
+                 <input type = "radio" value = "Female" name = "m"> Female  </div>   
+                 <input type = "email" class = "input-field" placeholder = "E-mail id" name = "email" required>
+                 <input type = "text" class = "input-field" placeholder = "Mobile No (Optional)" name = "pn" required>   
+                    <input type = "text" class = "input-field" placeholder = "Field of Interest" name = "skills" required>
+                    <input type = "password" class = "input-field" placeholder = "create password"  id="my" name = "password" required>
+                    <div class = "f1"> <input type="checkbox" onclick="myFunction()"> Show Password </div>
+                    <input type = "password" class = "input-field" placeholder = "confirm password"  id="me" name = "password2" required>
+                      <div class = "f1"> <input type="checkbox" onclick="meFunction()"> Show Password </div>
+                      <br><br>
+                   <div class = "terms"> <input type = "checkbox" class = "chech-box">I have filled the informations correctly.</div>
+                   <br> 
+             
+                     <button type = "submit" class = "submit-btn" onclick=" validateForm()"> Register me as a Tutor </button>
+                 </form>
+                
+
+
+
+                 <!------for guide-------->
+
+
+                <form id = "register" class = "input-group">
+             <input type = "text" class = "input-field" placeholder = "First Name" name ="name" required>
+                 <input type = "text" class = "input-field" placeholder = "Last Name" name = "lname" required>
+                 <input type = "text" class = "input-field" placeholder = "LPU Registration No." name = "reg" required><br>
+                 <div class = "gender"> Gender:&nbsp;
+                 <input type = "radio" value = "Male" name = "m"> Male
+                 <input type = "radio" value = "Female" name = "m"> Female  </div>   
+                 <input type = "email" class = "input-field" placeholder = "E-mail id" name = "email" required>
+                 <input type = "text" class = "input-field" placeholder = "Mobile No (Optional)" name = "pn" required>   
+                    <input type = "password" class = "input-field" placeholder = "create password"  id="my" name = "password" required>
+                    <div class = "f1"> <input type="checkbox" onclick="myFunction()"> Show Password </div>
+                    <input type = "password" class = "input-field" placeholder = "confirm password"  id="me" name = "password2" required>
+                      <div class = "f1"> <input type="checkbox" onclick="meFunction()"> Show Password </div>
+                      <br><br>
+                   <div class = "terms"> <input type = "checkbox" class = "chech-box">I have filled the informations correctly.</div>
+                   <br> 
+                    
+                    <button type = "submit" class = "submit-btn">Register me as a Guide </button>
+                </form>
+
+
+
+                 <!------for student-------->
+
+
+
+
+                <form id = "student" class = "input-group">
+                  <input type = "text" class = "input-field" placeholder = "First Name" name ="name" required>
+                 <input type = "text" class = "input-field" placeholder = "Last Name" name = "lname" required>
+                 <input type = "text" class = "input-field" placeholder = "LPU Registration No." name = "reg" required><br>
+                 <div class = "gender"> Gender:&nbsp;
+                 <input type = "radio" value = "Male" name = "m"> Male
+                 <input type = "radio" value = "Female" name = "m"> Female  </div>   
+                 <input type = "email" class = "input-field" placeholder = "E-mail id" name = "email" required>
+                 <input type = "text" class = "input-field" placeholder = "Mobile No (Optional)" name = "pn" required>   
+                    <input type = "password" class = "input-field" placeholder = "create password"  id="my" name = "password" required>
+                    <div class = "f1"> <input type="checkbox" onclick="myFunction()"> Show Password </div>
+                    <input type = "password" class = "input-field" placeholder = "confirm password"  id="me" name = "password2" required>
+                      <div class = "f1"> <input type="checkbox" onclick="meFunction()"> Show Password </div>
+                      <br><br>
+                   <div class = "terms"> <input type = "checkbox" class = "chech-box">I have filled the informations correctly.</div>
+                   <br> 
+                    
+                    <button type = "submit" class = "submit-btn"> Register me as a Verto </button>
+                </form>
+              </div>
+           
+        
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+            var s = document.getElementById("student");
+
+
+            function register(){
+                x.style.left = "1000px";
+                y.style.left = "50";
+                z.style.left = "100px";
+                s.style.left = "410px";
+        
+            }
+            
+            function login(){
+                x.style.left = "50";
+                y.style.left = "450";
+                z.style.left = "0px";
+                s.style.left = "400";
+            }
+            function student(){
+                x.style.left = "400";
+                y.style.left = "500";
+                z.style.left = "227";
+                s.style.left = "50px";
+            
+            }
+       
+            function myFunction() {
+  var a = document.getElementById("my");
+  if (a.type === "password") {
+    a.type = "text";
+  } else {  
+    a.type = "password";
+  }
+
+}
+          function meFunction() {
+  var b = document.getElementById("me");
+  if (b.type === "password") {
+    b.type = "text";
+  } else {  
+    b.type = "password";
+  }
+
+}
+
+<!------------till now form validation i used  only on tutor portion---->
+
+function validateForm() {
+var c = document.forms["myForm"]["name"].value;
+var c = document.forms["myForm"]["lname"].value;
+var c = document.forms["myForm"]["m"].value;
+var c = document.forms["myForm"]["m"].value;
+var c = document.forms["myForm"]["email"].value;
+var c = document.forms["myForm"]["pn"].value;
+var c = document.forms["myForm"]["skills"].value;
+var c = document.forms["myForm"]["password"].value;
+var c = document.forms["myForm"]["password2"].value;
+
+  if (c == "") {
+    alert("Data must be filled out");
+  }
+  else{
+      alert("You registered Successfully ");
+  }
+}
+
+    </script>
+
+
+
+<footer>
+  <p class="text-footer">
+      Copyright &copy; 2021-22 | www.yourmate.com | All rights are reserved
+  </p>
+</footer>
+
+    </body>
+</html>
